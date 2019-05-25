@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    
+}
+
+.navbar {
+    background-color: #313131;
+    color: white;
+    height: 44px;
+    font-size: 14px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .8;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+li {
+    transition: all .3s;
+}
+
+li:hover {
+    opacity: .6;
+}
+
+.main {
+    height: 800px;
+    background-image: url('https://www.pcr-online.biz/wp-content/uploads/iphone-x.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main div {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    color: white;
+}
+
+.card h3 {
+    font-size: 30px;
+}
+
+.card p {
+    margin: 35px 0px;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-1 {
+    background-color: rgb(231, 72, 90);
+}
+
+.card-2 {
+    background-color: rgb(30, 79, 111);
+}
+
+.card-3 {
+    background-color: #4CAF50;
+}
+
+.card-4 {
+    background-color: #FBC02D;
+}

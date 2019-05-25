@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Futura', 'Helvetica', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-links, .navbar-icons {
+    width: 30%;
+}
+
+.navbar-menu-button {
+    display: none;
+}
+
+.navbar-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: navy;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: .8em;
+}
+
+.navbar-links ul li {
+    padding: 20px 0px;
+    border-bottom: 3px solid transparent;
+    transition: all .5s;
+}
+
+.navbar-links ul li:hover {
+    color: navy;
+    padding-bottom: 20px;
+    border-bottom: 3px solid navy;
+}
+
+.navbar-icons ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.navbar-icons ul li {
+    transition: all .5s;
+    padding: 7px 10px;
+}
+
+.navbar-icons ul li:hover {
+    background-color: navy;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+
+.main {
+    width: 100%;
+    height: 800px;
+    background-image: url('https://i.ytimg.com/vi/r2Zl67Jlhno/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main p {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    height: 250px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-1 {
+    background-color: navy;
+}
+
+.card-2 {
+    background-color: rgb(35, 35, 35);
+}
+
+.card-3 {
+    background-color: navy;
+}
+
+.card-4 {
+    background-color: rgb(35, 35, 35);
+}
+
+.card p {
+    margin: 15px 0px;
+}
+
+.card a {
+    color: white;
+}
+
+@media(max-width: 1000px) {
+    .navbar-links, .navbar-icons {
+        display: none;
+    }
+
+    .navbar-title {
+        width: 100%;
+        text-align: center;
+        margin-left: -20px;
+    }
+
+    .navbar-menu-button {
+        font-size: 1.5em;
+        margin-left: 20px;
+        display: inline;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card-3 {
+        background-color: rgb(35, 35, 35);
+    }
+
+    .card-4 {
+        background-color: navy;
+    }
+}
+
+@media(max-width: 550px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-3 {
+        background-color: navy;
+    }
+
+    .card-4 {
+        background-color: rgb(35, 35, 35);
+    }
+}
